@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <meta name="viewport" content="width=1920, user-scalable=yes"> -->
+		<link rel="shortcut icon" href="favicon.png" />
+		<title>On the Internet, nobody knows you're a dog——by The New Yorker on July 5, 1993.</title>
+		<link rel="stylesheet" href="css/dog.css">
+
+	</head>
+	<body>
+		<div id="app">
+			<div class="navbg">
+				<div class="nav">
+					<div class="left"><img src="img/logo1.png" class="logo"></div>
+					<div class="right">
+						<button id="airdrop" class="button" onclick="toTwitter()">● Twitter</button>
+					</div>
+				</div>
+			</div>
+			<div class="contentbg">
+				<div class="content">
+					<div class="con-con">
+						<div class="con-left">
+							<div class="con-title">
+								<img src="./img/top/content.png" class="contentimg">
+							</div>
+							<div class="border"></div>
+							<div class="jindu">10000/10000</div>
+							
+							<button class="buybutton" onclick="toTwitter()">Airdrop</button>
+						</div>
+						<div class="con-right">
+							<img src="./img/top/banner.png" class="banner">
+						</div>
+					</div>
+				</div>
+				<div class="conlist">
+					<div class="listleft">
+						<img src="./img/top/title.png" class="contenttitle">
+					</div>
+					<div class="listright">
+						<button class="button min" onclick="showMore()">Show more</button>
+					</div>
+				</div>
+				<div class="doglist">
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/1.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/2.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/3.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/4.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/5.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/6.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/7.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/11.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/21.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/31.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/41.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/51.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/81.png">
+						<span class="dogname">Earth</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/111.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/112.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/113.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/114.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/115.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/116.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/117.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/119.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/120.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/121.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/122.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/123.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/124.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/125.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/126.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/211.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/213.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/214.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/215.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/216.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/217.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/218.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/219.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/220.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/221.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/222.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/212.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/223.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/224.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/225.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/310.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/311.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/312.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/313.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/314.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/315.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/316.png">
+						<span class="dogname">Metaverse Fifty</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/317.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/318.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/319.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/320.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/321.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/322.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/323.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/324.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/411.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/412.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/413.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/1113.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/11115.png">
+						<span class="dogname">Metaverse One</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/11116.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/11117.png">
+						<span class="dogname">Metaverse Two</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/11118.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/11119.png">
+						<span class="dogname">Metaverse Three</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/111110.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/111111.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/123121.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/131212.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+					<div class="item">
+						<img class="head" src="./img/content/head.png">
+						<img class="dogimg" src="./img/dog/1111111.png">
+						<span class="dogname">Metaverse Four</span>
+					</div>
+				</div>
+			    <div class="bottom">
+					<a href="https://ddid.io/" target="_blank">
+						<span>Made with</span>
+						<img src="./img/love.png" class="love"/>
+						<span>DDID</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script type="text/javascript">
+		function toTwitter() {
+		  window.location.href = "https://twitter.com/ddid_io";
+		}
+		function showMore(){
+			window.location.href = "https://opensea.io/collection/ddid-io";
+		}
+	</script>
+</html>

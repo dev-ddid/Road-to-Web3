@@ -1,0 +1,117 @@
+html{
+	font-size: 100px;
+}
+body{
+	font-size: 14px;
+	min-height: 101%;
+	background-color: #fff;
+}
+*{
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#app{
+	width: 100%;
+	margin: 0 auto;
+	min-width: 1024px
+}
+.navbg{
+   width: 100%;
+	background-color: #272642;
+	color: #fff;
+}
+.nav{
+	width: 94%;
+	margin: 0 auto;
+	height:0.6rem;
+	line-height:0.6rem;
+	display: flex;
+	justify-content: space-between;
+}
+.nav .left{
+   flex: 1;
+   font-size: 0.18rem;
+   font-weight: bold;
+}
+.nav .left .logo{
+	vertical-align: middle;
+}
+.nav a{
+	color: #fff;
+	text-decoration: none;
+	padding-right: 0.45rem;
+}
+.nav .right{
+	flex: 3;
+	text-align: right;
+	font-size: 0.18rem;
+	color: #fff;
+	font-weight: bold;
+}
+.nav .button{
+	cursor: pointer;
+	width: 2rem;
+	border: 0;
+   border-radius: 0.04rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	vertical-align: middle;
+	font-size: 0.18rem;
+	color: #fff;
+	background: #64E9FF;
+   background: -moz-linear-gradient(left,  #64E9FF 0%, #9362FF 100%);
+   background: -webkit-gradient(linear, left left, left right, color-stop(0%,#64E9FF), color-stop(100%,#9362FF));
+   background: -webkit-linear-gradient(left,  #64E9FF 0%,#9362FF 100%);
+   background: -o-linear-gradient(left,  #64E9FF 0%,#9362FF 100%);
+   background: -ms-linear-gradient(left,  #64E9FF 0%,#9362FF 100%);
+   background: linear-gradient(to right,  #64E9FF 0%,#9362FF 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64E9FF', endColorstr='#9362FF',GradientType=0 );
+}
+:root .button{filter:none;}
+.contentbg{
+	width: 100%;
+	color: #fff;
+}
+.content{
+	text-align: center;
+	overflow: hidden;
+	width: 94%;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 auto;
+}
+.fontStyle{
+	position: absolute;
+   z-index: 10;
+   width: 3rem;
+   flex: 1;
+   text-align: left;
+   top: 1.5rem;
+}
+.fontStyle img{
+	width: 3rem;
+	display: block;
+	margin-bottom: 0.2rem;
+}
+.fontStyle span{
+	width: 3rem;
+	color: #9A9A9A;
+    font-size: 0.15rem;
+    text-align: left;
+    font-family: "Microsoft JhengHei";
+    line-height: .25rem;
+}
+.yyzCanvas{
+	 flex: 3;
+	 position: fixed;
+	 width: 100%;
+	 height: 100%;
+	 top: 0.6rem;
+	 left: 0;
+	 z-index: 2;
+	 background-color: #1E1D32;
+	 background-image: url(../img/bg.png);
+	 background-repeat: no-repeat;
+	 background-size:cover;
+}

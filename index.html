@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=1920, user-scalable=yes"> -->
+    <link rel="shortcut icon" href="favicon.png"/>
+    <title>DDID</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/svga.min.js"></script>
+    <!--[if lt IE 10]> 
+        <script src="js/svga.ie.min.js"></script>
+    <![endif]-->
+    <!--[if gte IE 10]><!-->
+        <script src="js/svga.min.js"></script>
+    <!--<![endif]-->
+  </head>
+  <body>
+    <div id="app">
+        <div class="navbg">
+          <div class="nav">
+            <div class="left"><img src="img/logo.png" class="logo"></div>
+            <div class="right">
+              <a href="https://twitter.com/ddid_io">Twitter</a>
+              <button id="airdrop" class="button" onclick="topage()">Airdrop</button> 
+            </div>
+          </div>
+        </div>
+        <div class="contentbg">
+          <div class="content">
+            <div class="fontStyle">
+              <img src="img/font.png">
+              <span>A multi-universe decentralized digital identity management tool that connects the real world and the virtual world.</span>
+            </div>
+            <div id="yyzCanvas" class="yyzCanvas" loops="0"></div>
+          </div>
+        </div>
+    </div>
+    
+  </body>
+  
+  <script type="text/javascript">
+    function topage() {
+     window.location.href = 'https://ddid.io/NFTAirdrop.html'
+    }
+    function mouseOverFun(){
+      var airdrop = document.getElementById('airdrop');
+      airdrop.innerText = 'under construction'; 
+    }
+
+    //适配不同屏
+      function setFill() {
+        var $_canvas = document.getElementById("yyzCanvas"),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          screen_proportion = h / w,
+          svga_proportion = 16 / 9;
+        if (screen_proportion > svga_proportion) {
+          //长屏幕
+          $_canvas.style.width = h / svga_proportion + "px";
+          $_canvas.style.left = (w - h / svga_proportion) / 2 + "px";
+        } else {
+          $_canvas.style.height = w * svga_proportion + "px";
+          $_canvas.style.top = (h - w * svga_proportion) / 2 + "px";
+        }
+      }
+     function myonloadfun(){
+        var player = new SVGA.Player('#yyzCanvas');
+        var parser = new SVGA.Parser('#yyzCanvas');
+        player.clearsAfterStop = false;
+        parser.load('index.svga', function(videoItem) {
+            player.loops=0; // 设置循环播放次数是1,0是无限播放
+            player.setVideoItem(videoItem);
+            player.startAnimation();
+            player.onFinished(function(){
+              alert("动画停止了！！！")
+            });
+        })
+        /*
+        //https://file.nidong.com/upload/gift/20200520/upload_l3xlns9v1in4heomhwgbndzxt8quc9yb.svga
+        parser.load('index.svga?t=16009438825', function(videoItem) {
+            player.loops = 0;//动画循环次数，默认值为 0，表示无限循环
+            player.clearsAfterStop = false;//默认值为 true，表示当动画结束时，清空画布
+            player.setVideoItem(videoItem);
+            player.startAnimation();//从第 0 帧开始播放动画
+            player.onFrame(function (i) {
+            });
+        })*/
+    } 　　
+    /*用window.onload调用*/　
+    window.onload=function(){
+     // setFill();
+      myonloadfun();
+   }
+  </script>
+</html>
